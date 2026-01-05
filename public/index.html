@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja_JP" style="overscroll-behavior: none;">
-<head>
+<style>
+    /* 香港巴士公司颜色覆盖 */
+    /* 针对车辆图标 */
+    .vehicle-icon[data-operator="KMB"] { background-color: #E2231A !important; }
+    .vehicle-icon[data-operator="CTB"],
+    .vehicle-icon[data-operator="NWFB"] { background-color: #FFD100 !important; }
+    .vehicle-icon[data-operator="NLB"] { background-color: #6DCFF6 !important; }
+
+    /* 针对图例、标签等文本颜色 */
+    [data-operator="KMB"] { color: #E2231A !important; }
+    [data-operator="CTB"],
+    [data-operator="NWFB"] { color: #FFD100 !important; }
+    [data-operator="NLB"] { color: #6DCFF6 !important; }
+</style>
+	<head>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NP0LHFG11"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
